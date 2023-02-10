@@ -18,6 +18,12 @@ def drawPyramid(blockHeight):
     pyramid.add(Rect(100,380-blockHeight*5,200,blockHeight,align="bottom-left",border="black",borderWidth=1,fill=gradient("saddleBrown","darkGoldenrod", start="top")))
     pyramid.add(Rect(115,380-blockHeight*6,170,blockHeight,align="bottom-left",border="black",borderWidth=1,fill=gradient("saddleBrown","darkGoldenrod", start="top")))
     pyramid.add(Rect(130,380-blockHeight*7,140,blockHeight,align="bottom-left",border="black",borderWidth=1,fill=gradient("saddleBrown","darkGoldenrod", start="top")))
+    
+    ### Intended Solution ###
+    # for val in range(8):
+    #     pyramid.add(
+    #         Rect(200,380-blockHeight*val,350-30*val,blockHeight,fill=gradient("saddleBrown","darkGoldenrod", start="top"),border="black",borderWidth=1,align="bottom"))
+    
     # This variable defines the top of where the stairs should end.
     stairsTop = pyramid.top + 2 * blockHeight
 
