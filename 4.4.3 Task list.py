@@ -33,7 +33,7 @@ def onMousePress(mouseX, mouseY):
         ### Place Your Code Here ###
         newValue = app.getTextInput('Enter a message')
         tasks.add(
-            Label(str(tasks.counter) + "." + " " + newValue, 110, tasks.labelY, align='left', size=14)
+            Label(str(tasks.counter) + ". " + newValue, 110, tasks.labelY, align='left', size=14)
             )
         checkboxes.add(
             Rect(270, tasks.labelY - 5, 10, 10, fill='white', border='black',
